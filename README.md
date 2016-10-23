@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/sbstnmsch/firebase-finance.svg?branch=master)](https://travis-ci.org/sbstnmsch/firebase-finance)
+
 # Google Firebase Finance App
 This small web-app uses Google's Firebase API.
 
