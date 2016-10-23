@@ -7,10 +7,7 @@ expense you made, i.e. 5 EUR for a beer you just paid.
 Point your smartphone to http://beer-count.sebastian-misch.de
 and add it to your home-screen (iOS) or bookmark it on Android.
 
-<div style="text-align:center;">
-  <img style="display:inline-block;box-sizing:border-box;padding:40px 20px;border-radius:40px;background:#ccc;margin-right:20px;" src=".screenshots/app.jpg" />
-  <img style="display:inline-block;box-sizing:border-box;padding:40px 20px;border-radius:40px;background:#ccc;margin-right:20px;" src=".screenshots/app-metrics.jpg" />
-</div>
+<img align=center src=".screenshots/app.png" />
 
 ## Develope!
 
