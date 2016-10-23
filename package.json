@@ -1,0 +1,23 @@
+{
+  "name": "firebase-finance",
+  "version": "0.1.0",
+  "description": "Firebase Finance Demo App",
+  "scripts": {
+    "start": "(test -f app/manifest.appcache && rm app/manifest.appcache); lite-server",
+    "manifest": "echo \"CACHE MANIFEST\n\n# Version $(date)\n\nNETWORK:\n*\n\nCACHE:\nindex.js\nstyle.css\nicon.png\nhttps://www.gstatic.com/firebasejs/3.4.0/firebase.js\n\" > app/manifest.appcache",
+    "deploy": "npm run manifest && grunt sftp:deploy",
+    "test": "true"
+  },
+  "author": "Sebastian Misch",
+  "license": "MIT",
+  "repository": "https://github.com/sbstnmsch/firebase-finance.git",
+  "dependencies": {
+    "firebase": "^3.4.0"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-ssh": "^0.12.9",
+    "lite-server": "^2.2.2"
+  }
+}

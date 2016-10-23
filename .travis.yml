@@ -1,0 +1,11 @@
+language: node_js
+after_success:
+  if [ "$TRAVIS_BRANCH" == "master" ] ; then
+    if [ "x$DEPLOY_HOST$DEPLOY_PATH$DEPLOY_USER$DEPLOY_PASSWORD" != "x" ] ; then
+      npm run deploy ;
+    else
+      echo "Deployment missing environment variables $DEPLOY_(HOST,PATH,USERNAME,PASSWORD)." ;
+    fi
+  else
+    echo "Deployment omitted." ;
+  fi

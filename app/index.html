@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" manifest="manifest.appcache">
+  <head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="initial-scale=1,width=device-width,maximum-scale=1,user-scalable=no">
+    <link rel="apple-touch-icon-precomposed" href="icon.png">
+    <title>Beer Count</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="pane pane-account">
+        <div class="button-summary">☷</div>
+        <h1>account</h1>
+        <div class="button button-account">atm</div>
+        <div class="button button-account">businesstravel</div>
+        <div class="button button-account">car</div>
+        <div class="button button-account">groceries</div>
+        <div class="button button-account">tobacco</div>
+        <div class="button button-account">beer</div>
+        <div class="button button-account">leisure</div>
+        <div class="button button-account">transportation</div>
+      </div>
+      <div class="pane pane-summary">
+        <h1>Last 30 days</h1>
+        <div class="button-cancel">✕</div>
+        <div class="summary"></div>
+      </div>
+      <div class="pane pane-expense">
+        <h1>expense</h1>
+        <div class="button-cancel">✕</div>
+        <input class="input-number" type="number" pattern="\d*\." id="expense" />
+        <div class="button button-submit" onclick="">account now</div>
+      </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase.js"></script>
+    <script src="index.js" async></script>
+  </body>
+</html>
