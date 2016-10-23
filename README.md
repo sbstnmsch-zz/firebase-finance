@@ -8,13 +8,8 @@ Point your smartphone to http://beer-count.sebastian-misch.de
 and add it to your home-screen (iOS) or bookmark it on Android.
 
 <div style="text-align:center;">
-  <style>
-  .smartphone {
-    display:inline-block;box-sizing:border-box;padding:40px 20px;border-radius:40px;background:#ccc;margin-right:20px;
-  }
-  </style>
-  <img class="smartphone"  src=".screenshots/app.jpg" />
-  <img class="smartphone" src=".screenshots/app-metrics.jpg" />
+  <img style="display:inline-block;box-sizing:border-box;padding:40px 20px;border-radius:40px;background:#ccc;margin-right:20px;" src=".screenshots/app.jpg" />
+  <img style="display:inline-block;box-sizing:border-box;padding:40px 20px;border-radius:40px;background:#ccc;margin-right:20px;" src=".screenshots/app-metrics.jpg" />
 </div>
 
 ## Develope!
