@@ -1,8 +1,20 @@
+/*
+ * This is probably not the best code I have written so far ;-p
+ *
+ * It misses tests, security and minification. This is just a simple
+ * show-case for what can be done with a few lines of Javascript & Firebase.
+*/
+
 (function(ctx) {
   var config = {
         appId: 'beerCount',
         databaseURL: "https://fir-finance-github.firebaseio.com"
       };
+
+  // Make app multi-user by using a prefixed database ref.
+  // My server has geo-ip support and appends a ?xx country-code to
+  // the URL. Code? Nevermind, works without as well.
+  //
   var uid = ctx.localStorage.getItem(config.appId) ||
     (Date.now() + location.search.replace(/[^a-z]/ig, '-'));
 
@@ -74,6 +86,7 @@
     route({ expense: document.getElementById('expense').value });
   };
 
+  // Home of spaghetti code!
   ctx.route = function(payload) {
     if (!payload) {
       // If no payload given assume reset
