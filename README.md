@@ -1,6 +1,8 @@
 [![Build Status](https://travis-ci.org/sbstnmsch/firebase-finance.svg?branch=master)](https://travis-ci.org/sbstnmsch/firebase-finance)
 
 # Google Firebase Finance App
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/sbstnmsch/firebase-finance.svg)](https://greenkeeper.io/)
 This small web-app uses Google's Firebase API.
 
 Keep track of your monthly average expenses by entering each
