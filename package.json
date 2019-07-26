@@ -12,7 +12,7 @@
   "license": "MIT",
   "repository": "https://github.com/sbstnmsch/firebase-finance.git",
   "dependencies": {
-    "firebase": "^4.10.1"
+    "firebase": "^6.3.3"
   },
   "devDependencies": {
     "grunt": "^1.0.1",
